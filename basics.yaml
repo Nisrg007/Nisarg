@@ -1,0 +1,10 @@
+#new s3 bucket
+
+Resources:
+  MyS3Bucket: #logical ID
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: nisarg-p-bucket
+      Tags: #list of tags
+        - Key: CloudFormationLab
+          Value: nvp
